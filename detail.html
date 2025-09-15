@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Blog - Belajar Bootstrap 5.3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero-detail {
+      background: linear-gradient(135deg,#e0e7ff,#fce7f3,#dbeafe);
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+    }
+    .dropcap::first-letter {
+      float: left;
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1;
+      margin-right: 8px;
+      color: #6366f1;
+    }
+    blockquote {
+      background: #f9fafb;
+      border-left: 5px solid #6366f1;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      border-radius: .5rem;
+    }
+    .related-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background: linear-gradient(90deg, #6366f1, #ec4899, #3b82f6);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-feather-alt me-2"></i>Simple Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Artikel -->
+  <header class="hero-detail mt-5">
+    <div class="container">
+      <h1 class="fw-bold display-5">Belajar Bootstrap 5.3</h1>
+      <p class="text-muted">Dipublikasikan: 9 September 2025 • oleh <strong>Zeph</strong></p>
+    </div>
+  </header>
+
+  <!-- Konten Artikel -->
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <img src="https://picsum.photos/900/300" class="img-fluid rounded shadow-sm mb-4" alt="Gambar Artikel">
+        <p class="dropcap">
+          Bootstrap adalah framework CSS yang membantu membuat tampilan web lebih cepat, konsisten, dan responsif. 
+          Versi 5.3 menghadirkan banyak fitur baru seperti dark mode, utilitas tambahan, dan komponen modern.
+        </p>
+
+        <p>
+          Dengan menggunakan Bootstrap, developer bisa fokus ke logika aplikasi, tanpa harus pusing memikirkan detail CSS dari nol. 
+          Selain itu, Bootstrap juga memiliki komunitas besar dan dokumentasi yang lengkap, sehingga memudahkan pemula maupun profesional.
+        </p>
+
+        <blockquote>
+          “Code less, build faster, and look better.”  
+          <footer class="blockquote-footer mt-2">Tim Bootstrap</footer>
+        </blockquote>
+
+        <p>
+          Jika kamu baru belajar web development, Bootstrap bisa jadi teman terbaik untuk membangun website yang rapi dan profesional. 
+          Cukup dengan beberapa baris class, tampilan websitemu sudah terlihat modern tanpa banyak effort.
+        </p>
+
+        <a href="index.html" class="btn btn-outline-primary rounded-pill mt-3">
+          ← Kembali ke Daftar Blog
+        </a>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="row mt-5">
+      <h4 class="fw-bold mb-4">Artikel Terkait</h4>
+      <div class="col-md-6">
+        <div class="card related-card border-0 shadow-sm">
+          <img src="https://picsum.photos/602/300" class="card-img-top" alt="Artikel Terkait">
+          <div class="card-body">
+            <h6 class="fw-bold text-primary">Tips Belajar Web Development</h6>
+            <a href="detail.html#tips" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white pt-5 pb-4" style="background: linear-gradient(135deg, #6366f1, #ec4899, #3b82f6);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">✨ Simple Blog</h5>
+          <p class="small">Berbagi cerita, ilmu, dan pengalaman seputar web development dengan desain modern dan konten bermanfaat.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold mb-3">Navigasi</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">🏠 Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">👤 About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold mb-3">Ikuti Saya</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <div class="text-center small mt-3">&copy; 2025 <span class="fw-bold">Simple Blog – Zeph</span>. Semua Hak Dilindungi.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

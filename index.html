@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background: #fdfcff; }
+    .hero-section { background: linear-gradient(135deg,#e0e7ff,#fce7f3,#dbeafe); position: relative; }
+    .wave { position: absolute; bottom: -1px; left: 0; width: 100%; }
+    .card-blog { border-radius: 1rem; overflow: hidden; transition: all .4s ease; }
+    .card-blog img { transition: transform .5s ease; }
+    .card-blog:hover img { transform: scale(1.05); }
+    .card-blog:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+    .social-icons a { transition: 0.3s; }
+    .social-icons a:hover { color: #ffe082 !important; transform: scale(1.2); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background: linear-gradient(90deg, #6366f1, #ec4899, #3b82f6);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-feather-alt me-2"></i>Simple Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-section py-5 mt-5">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Kiri: Teks + CTA -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="fw-bold display-4 mb-3">
+            Selamat Datang di <span class="text-primary">Simple Blog</span>
+          </h1>
+          <p class="lead text-muted mb-4">
+            Cerita, ilmu, dan pengalaman seputar Web Development, dirancang untukmu yang ingin belajar dengan cara elegan dan menyenangkan.
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+            <a href="#blog" class="btn btn-primary btn-lg rounded-pill shadow-sm">
+              <i class="fas fa-book-open me-2"></i> Lihat Artikel
+            </a>
+            <a href="about.html" class="btn btn-outline-primary btn-lg rounded-pill shadow-sm">
+              <i class="fas fa-user me-2"></i> Tentang Saya
+            </a>
+          </div>
+        </div>
+        <!-- Kanan: Ilustrasi -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" 
+               alt="Blog Illustration" 
+               class="img-fluid" style="max-height: 300px;">
+        </div>
+      </div>
+    </div>
+    <!-- Wave -->
+    <div class="wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#fdfcff" d="M0,64L1440,0L1440,120L0,120Z"></path></svg>
+    </div>
+  </header>
+
+  <!-- Daftar Artikel -->
+  <main class="container my-5" id="blog">
+    <div class="row g-4">
+      <!-- Artikel 1 -->
+      <div class="col-md-6">
+        <div class="card card-blog border-0 shadow-sm">
+          <img src="https://i.pinimg.com/1200x/cf/0f/9f/cf0f9f62c75ef887c87ae478f363cb33.jpg" class="card-img-top" alt="Bootstrap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Belajar Bootstrap 5.3</h5>
+            <p class="card-text text-muted">Panduan singkat menggunakan Bootstrap untuk membuat web modern.</p>
+            <a href="detail.html#bootstrap" class="btn btn-outline-primary rounded-pill">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <!-- Artikel 2 -->
+      <div class="col-md-6">
+        <div class="card card-blog border-0 shadow-sm">
+          <img src="https://i.pinimg.com/736x/f2/2d/2a/f22d2afa19665d3dcf1d1480f1f527c2.jpg" class="card-img-top" alt="Tips">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Tips Belajar Web Development</h5>
+            <p class="card-text text-muted">Langkah praktis untuk memulai perjalanan menjadi web developer.</p>
+            <a href="detail.html#tips" class="btn btn-outline-primary rounded-pill">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white pt-5 pb-4" style="background: linear-gradient(135deg, #6366f1, #ec4899, #3b82f6);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">✨ Simple Blog</h5>
+          <p class="small">Berbagi cerita, ilmu, dan pengalaman seputar web development dengan desain modern dan konten bermanfaat.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold mb-3">Navigasi</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">🏠 Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">👤 About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold mb-3">Ikuti Saya</h6>
+          <div class="d-flex gap-3 social-icons">
+            <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <div class="text-center small mt-3">&copy; 2025 <span class="fw-bold">Simple Blog – Zeph</span>. Semua Hak Dilindungi.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
